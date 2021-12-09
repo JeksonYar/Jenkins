@@ -6,6 +6,14 @@ import static org.assertj.core.api.Assertions.*;
 public class AggregatorTest {
 
     @Test
+    public void testReset(){
+        Aggregator agr = new Agregator();
+        agr.addValue(6.0);
+        agr.reset();
+        assertThat(agr.getSum()).isEqualTo(0);
+}
+
+    @Test
     public void testInitialState() {
         Aggregator agr = new Aggregator();
         assertThat(agr.getSum()).isEqualTo(0);
