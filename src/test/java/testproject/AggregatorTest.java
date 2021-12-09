@@ -7,7 +7,7 @@ public class AggregatorTest {
 
     @Test
     public void testReset(){
-        Aggregator agr = new Aggregator();
+        Aggregator agr = new Agregator();
         agr.addValue(6.0);
         agr.reset();
         assertThat(agr.getSum()).isEqualTo(0);
