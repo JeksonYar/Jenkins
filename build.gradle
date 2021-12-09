@@ -1,14 +1,14 @@
 apply plugin: 'java'
 
-repositories {
+repositories {99(
     mavenCentral()
 }
 
-dependencies {
+dependencies {jjj
     testCompile 'junit:junit:4.12'
     testCompile("org.assertj:assertj-core:3.11.1")
 }
 
-test {
+test {u
     outputs.upToDateWhen { false }
 }
